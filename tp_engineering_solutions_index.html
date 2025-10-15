@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>TP Engineering  Solutions — Engenharia Eletrotécnica</title>
+  <meta name="description" content="TP Engeniring Solutions — Projetos e consultoria em engenharia eletrotécnica, automação e acompanhamento de obras." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#dddddd;
+      --muted:#6b7280;
+      --accent:#0f4c81; /* azul elegante */
+      --accent-2:#111827;
+      --card:#dddddd;
+      --radius:12px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      color-scheme: light;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:var(--bg);color:var(--accent-2);}
+    a{color:inherit}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:14px}
+    .logo{font-weight:700;font-size:18px;letter-spacing:0.4px}
+    nav{display:flex;gap:18px}
+    nav a{font-weight:600;color:var(--muted);text-decoration:none}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:32px;align-items:center;padding:48px 0}
+    .eyebrow{color:var(--accent);font-weight:700;margin-bottom:10px}
+    h1{font-size:34px;margin:0 0 12px 0;line-height:1.05}
+    p.lead{color:var(--muted);margin:0 0 18px 0}
+    .cta{display:flex;gap:12px;margin-top:6px}
+    .btn{background:var(--accent);color:#dddddd;padding:12px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn.ghost{background:transparent;border:1px solid rgba(15,76,129,0.12);color:var(--accent-2)}
+
+    .card{background:var(--card);padding:20px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0)}
+    .contact-card p{margin:8px 0;color:var(--muted)}
+
+    .about{display:flex;gap:28px;align-items:flex-start;padding:36px 0}
+    .about .text{flex:1}
+    .about .meta{width:220px}
+
+    .services{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;padding:18px 0}
+    .service{background:#dddddd;border:1px solid #eef2f6;padding:20px;border-radius:10px}
+    .service h4{margin:0 0 8px 0}
+    .service p{margin:0;color:var(--muted);font-size:14px}
+
+    #contact{padding:30px 0}
+    form{display:grid;gap:10px}
+    input[type=text], input[type=email], textarea{width:100%;padding:12px;border-radius:8px;border:1px solid #e6eef6;font-size:14px}
+    textarea{min-height:120px;resize:vertical}
+    .form-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .small{font-size:13px;color:var(--muted)}
+
+    footer{border-top:1px solid #f0f3f6;padding:20px 0;margin-top:36px;color:var(--muted);font-size:14px}
+
+    .imagem-direita {
+      float: right;         /* Coloca a imagem à direita */
+      margin: 0 0 10px 20px; /* Espaçamento: cima 0, direita 0, baixo 10px, esquerda 20px */
+      width: 400px;         /* Largura opcional */
+    }
+
+    /* responsive */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .about{flex-direction:column}
+      .form-row{grid-template-columns:1fr}
+      nav{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">TP Engineering  Solutions</div>
+      </div>
+      <nav>
+        <a href="#services">Serviços</a>
+        <a href="#about">Sobre</a>
+        <a href="#contact">Contacto</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <div class="eyebrow">• Projetos de Engenharia •</div>
+        <h1 id="headline">Soluções técnicas com precisão e eficiência.</h1>
+		<p style="padding-bottom: 10px;"> </p>
+        <div class="cta">
+          <a class="btn" href="#contact">Peça um Orçamento</a>
+          <a class="btn ghost" href="#services">Ver Serviços</a>
+        </div>
+        <div style="margin-top:18px;color:var(--muted);font-size:13px">Local: <strong>Castelo Branco, PT</strong></div>
+      </div>
+
+      <aside class="card contact-card">
+ 		<img src="C:\Users\Tplacido\Downloads\TP Engineering  Solutions (3).jpg" alt="Logo da Empresa" class="imagem-direita">
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="text">
+        <h2>Sobre</h2>
+        <p style="color:var(--muted);line-height:1.55">Experiência em projetos nacionais e internacionais. Executamos projetos elétricos completos, ITED, domotica, videovigilãncia, acompanhamento de obras e consultoria técnica. A nossa abordagem combina precisão técnica, cumprimento de prazos e atenção aos detalhes.</p>
+        <p style="margin-top:12px;color:var(--muted);">Valores: <strong>Rigor Técnico</strong> • <strong>Eficiência</strong> • <strong>Transparência</strong> 
+      </div>
+      <div class="meta card">
+        <h4 style="margin:0 0 8px 0">Destaques</h4>
+        <ul style="margin:0;padding-left:18px;color:var(--muted)">
+          <li>Projetos personalizados</li>
+          <li>Dimensionamento e estudo da solução</li>
+          <li>Integração de sistemas</li>
+          <li>Relatórios técnicos</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Serviços</h2>
+      <div class="services">
+        <div class="service">
+          <h4>Projetos Elétricos e ITED</h4>
+          <p>Projetos completos, esquemas, especificações e acompanhamento técnico para obras.</p>
+        </div>
+        <div class="service">
+          <h4>Domótica e Videovigilância</h4>
+          <p>Conceção e integração de soluções para controlo, monitorização, conforto e segurança do seu espaço</p>
+        </div>
+        <div class="service">
+          <h4>Acompanhamento de Obras</h4>
+          <p>Supervisão técnica, coordenação com empreiteiros e verificação de conformidade.</p>
+        </div>
+        <div class="service">
+          <h4>Consultoria Técnica</h4>
+          <p>Assessoria para certificação, licenciamento e cumprimento dos regulamentos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contacto</h2>
+      <p class="small">Preenche o formulário ou usa os contactos rápidos no quadro à direita.</p>
+      <div style="display:grid;grid-template-columns:1fr 320px;gap:20px;margin-top:12px">
+        <div>
+          <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <div class="form-row">
+              <input type="text" id="name" placeholder="Nome" required>
+              <input type="email" id="email" placeholder="Email" required>
+            </div>
+            <input type="text" id="subject" placeholder="Assunto (ex: Pedido de orçamento)" required>
+            <textarea id="message" placeholder="Mensagem" required></textarea>
+            <div style="display:flex;gap:10px;align-items:center;margin-top:6px">
+              <button class="btn" type="submit">Enviar Mensagem</button>
+              <button type="button" class="btn ghost" onclick="resetForm()">Limpar</button>
+            </div>
+            <p class="small" style="margin-top:8px">Nota: este formulário usa o teu cliente de email local. Se preferires, podes integrar um serviço como Formspree ou Netlify Forms para enviar diretamente.</p>
+          </form>
+        </div>
+
+        <aside class="card contact-card">
+          <h4 style="margin-top:0">Contactos</h4>
+          <p><strong>Email:</strong><br><a id="pub-email" href="mailto:teu-email@dominio.com">teu-email@dominio.com</a></p>
+          <p><strong>Telefone:</strong><br><a id="pub-phone" href="tel:+351912345678">+351 912 345 678</a></p>
+        </aside>
+      </div>
+    </section>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© <span id="year"></span> TP Engeniring Solutions — Todos os direitos reservados.</div>
+        <div style="color:var(--muted)">Desenvolvido com simplicidade e foco técnico.</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // --- Personalize estes valores com os seus contactos reais
+    const CONTACT_EMAIL = 'tiago.r.placido@gmail.com';
+    const CONTACT_PHONE = '+351 968152492';
+
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('pub-email').href = 'mailto:' + CONTACT_EMAIL;
+    document.getElementById('pub-email').textContent = CONTACT_EMAIL;
+    document.getElementById('pub-phone').href = 'tel:' + CONTACT_PHONE;
+    document.getElementById('pub-phone').textContent = CONTACT_PHONE;
+    document.getElementById('pub-linkedin').href = CONTACT_LINKEDIN;
+    document.getElementById('pub-linkedin').textContent = CONTACT_LINKEDIN.replace('https://','');
+
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if(!name || !email || !subject || !message){
+        alert('Por favor preencha todos os campos.');
+        return false;
+      }
+
+      const body = `Nome: ${name}%0D%0AEmail: ${email}%0D%0A%0D%0A${encodeURIComponent(message)}`;
+      const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${body}`;
+      window.location.href = mailto;
+      return false;
+    }
+
+    function resetForm(){
+      document.getElementById('contactForm').reset();
+    }
+  </script>
+</body>
+</html>
